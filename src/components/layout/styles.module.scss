@@ -1,0 +1,28 @@
+.wrapper {
+  @apply grid h-dvh max-w-[640px] gap-4 mx-auto;
+  grid-template-rows: auto 1fr auto;
+
+  & > * {
+    @apply px-4 py-3 bg-white;
+
+    &:first-child {
+      @apply rounded-b-xl;
+    }
+
+    &:nth-child(2) {
+      @apply rounded-xl;
+    }
+
+    &:last-child {
+      @apply rounded-t-xl;
+    }
+  }
+}
+
+.link_active {
+  @apply text-[#191919];
+
+  & svg {
+    @apply stroke-[#191919];
+  }
+}
